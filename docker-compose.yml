@@ -1,0 +1,10 @@
+services:
+ 
+  app:
+    build: . # Constrói a imagem a partir do Dockerfile na pasta atual
+    container_name: api #Nome do container
+    ports:
+      - "8000:8000"
+    volumes:
+       - .:/app
+   
